@@ -2,6 +2,9 @@
 
 Training and dev data for [IWSLT 2025](https://iwslt.org/2025/) Estonian-English speech translation task.
 
+Training data contains 581647 utterances (1258 hours) and development set 1601 utterances (3.6 hours). Training data originates from the [TalTech Estonian Speech Dataset 1.0](https://cs.taltech.ee/staff/tanel.alumae/data/est-pub-asr-data/) which is a manually transcribed dataset of mostly broadcast data created for training ASR models. All the speech data consists of long-form
+speech and has been manually transcribed and timealigned with speech at an utterance level. In the dataset provided here, the long-form recordings have been split up into utterances. The transcripts have been automatically translated to English using Google Translate. Development data contains data from government and municipal press conferences, TV news and TV talkshows and has been manually translated to English. Both original Estonian transcriptions as well as English translations are provided for all utterances.
+
 # Data format
 
 Annotation is given in tsv file, with the fields audio, Estonian, English. E.g.:
@@ -23,6 +26,8 @@ Audio data is not included in the repository and has to be downloaded and unpack
     wget --continue --progress=dot:mega --tries=0 https://cs.taltech.ee/staff/tanel.alumae/data/iwslt2025_est2eng_data_audio.tar
 
     tar xvf iwslt2025_est2eng_data_audio.tar
+
+This should create the "audio" subdirectory with a lot of subdirectories, which correspond to individual long recordings from which the utterances are taken.
 
 # Citing
 
