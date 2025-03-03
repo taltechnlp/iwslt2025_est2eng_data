@@ -21,7 +21,7 @@ The field `audio` refers to an audio file in the audio subdirectory (which has t
 
 # Downloading audio
 
-Audio data is not included in the repository and has to be downloaded and unpacked separately:
+Audio data is around 90 GB in size (19 kHz flac files) and is thus not included in the repository and has to be downloaded and unpacked separately:
 
     wget --continue --progress=dot:mega --tries=0 https://cs.taltech.ee/staff/tanel.alumae/data/iwslt2025_est2eng_data_audio.tar
 
